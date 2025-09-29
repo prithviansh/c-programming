@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    double base, exponent, result;
+
+    // Input base and exponent
+    scanf("%lf %lf", &base, &exponent);
+
+    // Calculate power
+    result = pow(base, exponent);
+
+    // Print result (no decimal if result is a whole number)
+    printf("%.0lf\n", result);
+    
+    return 0;
+}

@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int cm;
+    float meters, kilometers;
+
+    // Read input in centimeters
+    scanf("%d", &cm);
+
+    // Convert to meters and kilometers
+    meters = cm / 100.0;
+    kilometers = cm / 100000.0;
+
+    // Print results with 2 decimal places
+    printf("%.2f %.2f\n", meters, kilometers);
+    
+    return 0;
+}

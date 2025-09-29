@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+        int x1, y1, x2, y2;
+    
+    // Input four integers representing the coordinates of two points
+    scanf("%d %d %d %d", &x1, &y1, &x2, &y2);
+    
+    // Calculate the Euclidean distance using the distance formula
+    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+    
+    // Output the distance rounded to two decimal places
+    printf("%.2f\n", distance);    
+    return 0;
+}
